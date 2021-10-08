@@ -15,7 +15,7 @@
         android:id="@+id/text01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:layout_toEndOf="@id/image01"
         tools:text="@tools:sample/date/ddmmyy" />
 
@@ -23,7 +23,7 @@
         android:id="@+id/text02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:layout_toEndOf="@id/image01"
         android:layout_below="@id/text01"
         tools:text="@tools:sample/lorem" />
@@ -33,7 +33,7 @@
         android:id="@+id/text03"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:layout_toEndOf="@id/image01"
         android:layout_below="@id/text02"
         android:maxLines="5"
