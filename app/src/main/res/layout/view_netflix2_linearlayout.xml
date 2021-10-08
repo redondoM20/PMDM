@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text01"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="35dp"
+        android:layout_marginBottom="15dp"
+        tools:text="@tools:sample/first_names" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_below="@id/text01" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_below="@id/text01"
+        android:layout_toRightOf="@id/image01" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_below="@id/text01"
+        android:layout_toRightOf="@id/image02" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text02"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        tools:text="@tools:sample/first_names"
+        android:layout_below="@id/image01" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_below="@id/text02" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_below="@id/text02"
+        android:layout_toRightOf="@id/image01" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_below="@id/text02"
+        android:layout_toRightOf="@id/image02" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text03"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        tools:text="@tools:sample/first_names"
+        android:layout_below="@id/image04" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_below="@id/text03" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_below="@id/text03"
+        android:layout_toRightOf="@id/image01" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars"
+        android:layout_below="@id/text03"
+        android:layout_toRightOf="@id/image02" />
+
+</RelativeLayout>
