@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AvatarView">
+        <item name="android:layout_width">@dimen/avatar_width</item>
+        <item name="android:layout_height">@dimen/avatar_height</item>
+    </style>
+
+    <style name="LineLayout">
+        <item name="android:layout_marginTop">@dimen/line_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/line_margin_start</item>
+        <item name="android:layout_marginEnd">@dimen/line_margin_end</item>
+        <item name="android:layout_height">@dimen/line_height</item>
+        <item name="android:layout_width">@dimen/line_width</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="textLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="filmName">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_size1</item>
+    </style>
+
+    <style name="Arrow">
+        <item name="android:height"></item>
+        <item name="android:width"></item>
+    </style>
+
+    <style name="Block">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/block_margin_bottom</item>
+    </style>
+
+</resources>

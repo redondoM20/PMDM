@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_vertical">16dp</dimen>
+    <dimen name="space_horizontal">16dp</dimen>
+
+    <dimen name="avatar_height">70dp</dimen>
+    <dimen name="avatar_width">100dp</dimen>
+
+    <dimen name="line_margin_top">2dp</dimen>
+    <dimen name="line_margin_start">5dp</dimen>
+    <dimen name="line_margin_end">5dp</dimen>
+    <dimen name="line_height">20dp</dimen>
+    <dimen name="line_width">1.5dp</dimen>
+    <!-- Fuentes -->
+    <dimen name="title_size1">25sp</dimen>
+    <dimen name="title_size2">25sp</dimen>
+
+    <dimen name="block_margin_bottom">15dp</dimen>
+</resources>

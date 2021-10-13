@@ -1,77 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="@color/cardview_dark_background">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/info"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/Autodescargas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/info"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:text="Autodescargas" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/Autodescargas"
+            android:textColor="@color/teal_700"
+            android:textSize="15sp"
+            tools:text="ACTIVADA" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            tools:src="@tools:sample/avatars" />
+
+    </RelativeLayout>
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image01"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_below="@id/header"
         android:layout_alignParentStart="true"
-        tools:src="@tools:sample/avatars"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        tools:src="@tools:sample/avatars" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text01"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_below="@id/header"
         android:layout_marginStart="5dp"
-        android:layout_toRightOf="@id/image01"
-        android:textSize="35dp"
-        tools:text="@tools:sample/first_names" />
+        android:layout_toEndOf="@id/image01"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        tools:text="Alex" />
 
+    <RelativeLayout
+        android:id="@+id/bloque01"
+        style="@style/Block"
+        android:layout_below="@id/image01">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image02"
+            style="@style/AvatarView"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text02"
+            style="@style/filmName"
+            android:layout_toEndOf="@id/image02"
+            tools:text="YOU" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text03"
+            style="@style/textLayout"
+            android:layout_below="@id/text02"
+            android:layout_toEndOf="@id/image02"
+            tools:text="2 episodios" />
+
+        <LinearLayout
+            android:id="@+id/line01"
+            android:layout_below="@id/text02"
+            style="@style/LineLayout"
+            android:layout_toEndOf="@id/text03"
+            android:orientation="horizontal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text04"
+            style="@style/textLayout"
+            android:layout_below="@id/text02"
+            android:layout_toEndOf="@id/line01"
+            tools:text="1,5 GB" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrow01"
+            android:layout_height="10dp"
+            android:layout_width="10dp"
+            android:layout_alignParentEnd="true"
+            tools:src="@tools:sample/avatars" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bloque02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bloque01">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image03"
+            style="@style/AvatarView"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text05"
+            style="@style/filmName"
+            android:layout_toEndOf="@id/image03"
+            tools:text="YOU" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text06"
+            style="@style/textLayout"
+            android:layout_below="@id/text05"
+            android:layout_toEndOf="@id/image03"
+            tools:text="2 episodios" />
+
+        <LinearLayout
+            android:id="@+id/line02"
+            android:layout_below="@id/text05"
+            style="@style/LineLayout"
+            android:layout_toEndOf="@id/text06"
+            android:orientation="horizontal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text07"
+            style="@style/textLayout"
+            android:layout_below="@id/text05"
+            android:layout_toEndOf="@id/line02"
+            tools:text="1,5 GB" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/arrow02"
+            android:layout_height="10dp"
+            android:layout_width="10dp"
+            android:layout_alignParentEnd="true"
+            tools:src="@tools:sample/avatars" />
+
+
+    </RelativeLayout>
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image02"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
-        android:layout_below="@id/image01"
+        android:id="@+id/image04"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/bloque02"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
         tools:src="@tools:sample/avatars" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text02"
+        android:id="@+id/text08"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text01"
-        android:layout_marginTop="15dp"
-        android:layout_toRightOf="@id/image02"
-        android:textSize="35dp"
-        tools:text="@tools:sample/first_names" />
+        android:layout_height="40dp"
+        android:layout_below="@id/bloque02"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/image01"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        tools:text="Alex" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text02"
-        android:layout_toRightOf="@id/image02"
-        tools:text="@tools:sample/date/mmddyy" />
 
-    <LinearLayout
-        android:id="@+id/line01"
-        android:orientation="horizontal"
-        android:layout_width="1.5dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="2dp"
-        android:background="@color/black"
-        android:layout_toRightOf="@id/text03"
-        android:layout_below="@id/text02" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text04"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text02"
-        android:layout_toRightOf="@id/line01"
-        android:maxLines="1"
-        tools:text="@tools:sample/lorem/random" />
-
-    <androidx.appcompat.widget.AppCompatImageView
+    <!---<androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image03"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="15dp"
+        style="@style/AvatarView"
         android:layout_below="@id/image02"
+        android:layout_marginTop="15dp"
         tools:src="@tools:sample/avatars" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -79,9 +196,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/text04"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/image02"
-        android:textSize="35dp"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:layout_toEndOf="@id/image02"
+        android:textColor="@color/white"
+        android:textSize="35sp"
         tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -89,26 +207,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text05"
-        android:layout_toRightOf="@id/image02"
+        android:layout_toEndOf="@id/image02"
+        android:textColor="@color/white"
         tools:text="@tools:sample/date/mmddyy" />
 
     <LinearLayout
         android:id="@+id/line02"
-        android:orientation="horizontal"
         android:layout_width="1.5dp"
         android:layout_height="20dp"
+        android:layout_below="@id/text05"
         android:layout_marginTop="2dp"
-        android:background="@color/black"
-        android:layout_toRightOf="@id/text06"
-        android:layout_below="@id/text05" />
+        android:layout_toEndOf="@id/text06"
+        android:background="@color/white"
+        android:orientation="horizontal" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text07"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text05"
-        android:layout_toRightOf="@id/line02"
+        android:layout_toEndOf="@id/line02"
         android:maxLines="1"
+        android:textColor="@color/white"
         tools:text="@tools:sample/lorem/random" />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -124,17 +244,17 @@
         android:id="@+id/text08"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_below="@id/image03"
         android:layout_marginStart="5dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@id/image04"
-        android:layout_below="@id/image03"
-        android:textSize="35dp"
+        android:layout_toEndOf="@id/image04"
+        android:textColor="@color/white"
+        android:textSize="35sp"
         tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image05"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
+        style="@style/AvatarView"
         android:layout_below="@id/image04"
         tools:src="@tools:sample/avatars" />
 
@@ -144,8 +264,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/text08"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@id/image05"
-        android:textSize="35dp"
+        android:layout_toEndOf="@id/image05"
+        android:textColor="@color/white"
+        android:textSize="35sp"
         tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -153,26 +274,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text09"
-        android:layout_toRightOf="@id/image05"
+        android:layout_toEndOf="@id/image05"
+        android:textColor="@color/white"
         tools:text="@tools:sample/date/mmddyy" />
 
     <LinearLayout
         android:id="@+id/line03"
-        android:orientation="horizontal"
         android:layout_width="1.5dp"
         android:layout_height="20dp"
+        android:layout_below="@id/text09"
         android:layout_marginTop="2dp"
-        android:background="@color/black"
-        android:layout_toRightOf="@id/text10"
-        android:layout_below="@id/text09" />
+        android:layout_toEndOf="@id/text10"
+        android:background="@color/white"
+        android:orientation="horizontal" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text09"
-        android:layout_toRightOf="@id/line03"
+        android:layout_toEndOf="@id/line03"
         android:maxLines="1"
+        android:textColor="@color/white"
         tools:text="@tools:sample/lorem/random" />
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -188,17 +311,17 @@
         android:id="@+id/text12"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_below="@id/image05"
         android:layout_marginStart="5dp"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@id/image06"
-        android:layout_below="@id/image05"
-        android:textSize="35dp"
+        android:layout_toEndOf="@id/image06"
+        android:textColor="@color/white"
+        android:textSize="35sp"
         tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image07"
-        android:layout_width="100dp"
-        android:layout_height="70dp"
+        style="@style/AvatarView"
         android:layout_below="@id/image06"
         tools:src="@tools:sample/avatars" />
 
@@ -208,8 +331,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/text12"
         android:layout_marginTop="15dp"
-        android:layout_toRightOf="@id/image07"
-        android:textSize="35dp"
+        android:layout_toEndOf="@id/image07"
+        android:textColor="@color/white"
+        android:textSize="35sp"
         tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -217,26 +341,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text13"
-        android:layout_toRightOf="@id/image07"
+        android:layout_toEndOf="@id/image07"
+        android:textColor="@color/white"
         tools:text="@tools:sample/date/mmddyy" />
 
     <LinearLayout
         android:id="@+id/line04"
-        android:orientation="horizontal"
         android:layout_width="1.5dp"
         android:layout_height="20dp"
+        android:layout_below="@id/text13"
         android:layout_marginTop="2dp"
-        android:background="@color/black"
-        android:layout_toRightOf="@id/text14"
-        android:layout_below="@id/text13" />
+        android:layout_toEndOf="@id/text14"
+        android:background="@color/white"
+        android:orientation="horizontal" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/text13"
-        android:layout_toRightOf="@id/line04"
+        android:layout_toEndOf="@id/line04"
         android:maxLines="1"
+        android:textColor="@color/white"
         tools:text="@tools:sample/lorem/random" />
+        -->
 
 </RelativeLayout>
