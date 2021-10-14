@@ -9,42 +9,44 @@
         android:id="@+id/menu"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@color/black"
         android:orientation="horizontal"
-        android:background="@color/black">
+        android:padding="3dp">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon01"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="20dp"
+            style="@style/icon"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/option01"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="20sp"
-            tools:text="Programas"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/white"
-            android:layout_marginRight="30dp" />
+            android:textSize="20sp"
+            tools:text="Programas" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/option02"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="20sp"
-            tools:text="Peliculas"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/white"
-            android:layout_marginEnd="30dp" />
+            android:textSize="20sp"
+            tools:text="Peliculas" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/option03"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:textSize="20sp"
-            tools:text="Mi lista"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/white"
-            android:layout_marginEnd="30dp" />
+            android:textSize="20sp"
+            tools:text="Mi lista" />
 
     </LinearLayout>
 
@@ -52,11 +54,11 @@
         android:id="@+id/text01"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:textSize="35sp"
-        android:layout_marginBottom="15dp"
-        tools:text="@tools:sample/first_names"
         android:layout_below="@id/menu"
-        android:textColor="@color/white" />
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image01"
@@ -169,58 +171,58 @@
             android:layout_height="20dp"
             android:layout_below="@id/icon02"
             android:layout_marginStart="25dp"
-            tools:text="Inicio"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            tools:text="Inicio" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon03"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="50dp"
-            android:layout_toRightOf="@id/icon02"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@id/icon02"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_below="@id/icon03"
-            android:layout_marginLeft="45dp"
-            android:layout_toRightOf="@id/icon02"
-            android:text="Buscar"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@id/icon02"
+            tools:text="Buscar"
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon04"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="60dp"
-            android:layout_toRightOf="@id/icon03"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@id/icon03"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_below="@id/icon02"
-            android:layout_marginLeft="30dp"
-            android:layout_toRightOf="@id/icon03"
-            android:text="Proximamente"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/icon03"
+            tools:text="Proximamente"
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon05"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="60dp"
-            android:layout_toRightOf="@id/icon04"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@id/icon04"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_below="@id/icon02"
-            android:layout_marginLeft="45dp"
-            android:layout_toRightOf="@id/icon04"
-            android:text="Descargas"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@id/icon04"
+            tools:text="Descargas"
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -228,7 +230,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -236,8 +238,8 @@
             android:layout_height="20dp"
             android:layout_below="@id/icon02"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="25dp"
-            android:text="Mas"
+            android:layout_marginEnd="25dp"
+            tools:text="Mas"
             android:textColor="@color/white" />
 
     </RelativeLayout>

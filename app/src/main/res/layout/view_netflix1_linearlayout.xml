@@ -8,14 +8,13 @@
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_height="50dp"
+        android:padding="3dp"
         android:background="@color/black">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/info"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            style="@style/icon"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -41,37 +40,36 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/edit"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            style="@style/icon"
             android:layout_alignParentEnd="true"
             tools:src="@tools:sample/avatars" />
 
     </RelativeLayout>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image01"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <RelativeLayout
+        android:id="@+id/user01"
         android:layout_below="@id/header"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="15dp"
-        tools:src="@tools:sample/avatars" />
+        style="@style/userBlock">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text01"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/header"
-        android:layout_marginStart="5dp"
-        android:layout_toEndOf="@id/image01"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        tools:text="Alex" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image01"
+            style="@style/avatar"
+            android:layout_alignParentStart="true"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text01"
+            style="@style/UserName"
+            android:layout_toEndOf="@id/image01"
+            tools:text="Alex" />
+
+    </RelativeLayout>
+
 
     <RelativeLayout
         android:id="@+id/bloque01"
         style="@style/Block"
-        android:layout_below="@id/image01">
+        android:layout_below="@id/user01">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image02"
@@ -93,8 +91,8 @@
 
         <LinearLayout
             android:id="@+id/line01"
-            android:layout_below="@id/text02"
             style="@style/LineLayout"
+            android:layout_below="@id/text02"
             android:layout_toEndOf="@id/text03"
             android:orientation="horizontal" />
 
@@ -105,20 +103,12 @@
             android:layout_toEndOf="@id/line01"
             tools:text="1,5 GB" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/arrow01"
-            android:layout_height="10dp"
-            android:layout_width="10dp"
-            android:layout_alignParentEnd="true"
-            tools:src="@tools:sample/avatars" />
-
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/bloque02"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Block"
         android:layout_below="@id/bloque01">
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -130,19 +120,19 @@
             android:id="@+id/text05"
             style="@style/filmName"
             android:layout_toEndOf="@id/image03"
-            tools:text="YOU" />
+            tools:text="The Umbrella Academy" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text06"
             style="@style/textLayout"
             android:layout_below="@id/text05"
             android:layout_toEndOf="@id/image03"
-            tools:text="2 episodios" />
+            tools:text="3 episodios" />
 
         <LinearLayout
             android:id="@+id/line02"
-            android:layout_below="@id/text05"
             style="@style/LineLayout"
+            android:layout_below="@id/text05"
             android:layout_toEndOf="@id/text06"
             android:orientation="horizontal" />
 
@@ -151,37 +141,220 @@
             style="@style/textLayout"
             android:layout_below="@id/text05"
             android:layout_toEndOf="@id/line02"
-            tools:text="1,5 GB" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/arrow02"
-            android:layout_height="10dp"
-            android:layout_width="10dp"
-            android:layout_alignParentEnd="true"
-            tools:src="@tools:sample/avatars" />
+            tools:text="1,7 GB" />
 
 
     </RelativeLayout>
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image04"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_below="@id/bloque02"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="15dp"
-        tools:src="@tools:sample/avatars" />
+    <RelativeLayout
+        android:id="@+id/user02"
+        style="@style/userBlock"
+        android:layout_below="@id/bloque02">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text08"
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image04"
+            style="@style/avatar"
+            android:layout_alignParentStart="true"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text08"
+            style="@style/UserName"
+            android:layout_toEndOf="@id/image04"
+            tools:text="Glenn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bloque03"
+        style="@style/Block"
+        android:layout_below="@id/user02">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image10"
+            style="@style/AvatarView"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text09"
+            style="@style/filmName"
+            android:layout_toEndOf="@id/image10"
+            tools:text="Élite" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text10"
+            style="@style/textLayout"
+            android:layout_below="@id/text09"
+            android:layout_toEndOf="@id/image10"
+            tools:text="4 episodios" />
+
+        <LinearLayout
+            android:id="@+id/line03"
+            style="@style/LineLayout"
+            android:layout_below="@id/text09"
+            android:layout_toEndOf="@id/text10"
+            android:orientation="horizontal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text11"
+            style="@style/textLayout"
+            android:layout_below="@id/text09"
+            android:layout_toEndOf="@id/line03"
+            tools:text="2,3 GB" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user03"
+        style="@style/userBlock"
+        android:layout_below="@id/bloque03">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image11"
+            style="@style/avatar"
+            android:layout_alignParentStart="true"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text12"
+            style="@style/UserName"
+            android:layout_toEndOf="@id/image11"
+            tools:text="Niños" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bloque04"
+        style="@style/Block"
+        android:layout_below="@id/user03">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image12"
+            style="@style/AvatarView"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text13"
+            style="@style/filmName"
+            android:layout_toEndOf="@id/image12"
+            tools:text="Los hermanos \nWilloughby" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text14"
+            style="@style/textLayout"
+            android:layout_below="@id/text13"
+            android:layout_toEndOf="@id/image12"
+            tools:text="1h 32 min" />
+
+        <LinearLayout
+            android:id="@+id/line04"
+            style="@style/LineLayout"
+            android:layout_below="@id/text13"
+            android:layout_toEndOf="@id/text14"
+            android:orientation="horizontal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text15"
+            style="@style/textLayout"
+            android:layout_below="@id/text13"
+            android:layout_toEndOf="@id/line04"
+            tools:text="1 GB" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/bloque02"
-        android:layout_marginStart="5dp"
-        android:layout_toEndOf="@id/image01"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        tools:text="Alex" />
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon02"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/icon02"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            tools:text="Inicio" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon03"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/icon02"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/icon03"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/icon02"
+            android:text="Buscar"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon04"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/icon03"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/icon02"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/icon03"
+            android:text="Proximamente"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon05"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/icon04"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/icon02"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/icon04"
+            android:text="Descargas"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon06"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/icon02"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:text="Mas"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
 
 
     <!---<androidx.appcompat.widget.AppCompatImageView
