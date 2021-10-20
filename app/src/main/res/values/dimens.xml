@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="parte01_width">300dp</dimen>
+    <dimen name="parte01_height">150dp</dimen>
+
+    <dimen name="parte02_width">300dp</dimen>
+    <dimen name="parte02_height">40dp</dimen>
+
+    <dimen name="icon_width">15dp</dimen>
+    <dimen name="icon_height">15dp</dimen>
+    <dimen name="icon_margin">2.5dp</dimen>
+
+
+    <dimen name="title_margin_bottom">5dp</dimen>
+</resources>

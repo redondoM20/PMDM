@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="body">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/black_10</item>
+    </style>
+
+    <style name="title01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginBottom">@dimen/title_margin_bottom</item>
+    </style>
+
+    <style name="card">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="parte01">
+        <item name="android:layout_width">@dimen/parte01_width</item>
+        <item name="android:layout_height">@dimen/parte01_height</item>
+    </style>
+
+    <style name="image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="title02">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/black_50</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="parte02">
+        <item name="android:layout_width">@dimen/parte02_width</item>
+        <item name="android:layout_height">@dimen/parte02_height</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="icon">
+        <item name="android:layout_width">@dimen/icon_width</item>
+        <item name="android:layout_height">@dimen/icon_height</item>
+        <item name="android:layout_margin">@dimen/icon_margin</item>
+    </style>
+
+    <style name="text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="precio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/teal_700</item>
+    </style>
+</resources>
