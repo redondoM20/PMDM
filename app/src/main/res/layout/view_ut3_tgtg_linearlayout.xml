@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/body">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title01"
+        style="@style/title01"
+        tools:text="Pastelería"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/fondo01"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_recipes"
+        app:layout_constraintTop_toBottomOf="@id/title01"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:text="Strawberry Frosted Layer Cake"
+        app:layout_constraintBottom_toBottomOf="@id/fondo01"
+        app:layout_constraintLeft_toLeftOf="@id/fondo01" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon01"
+        style="@style/icon"
+        android:src="@drawable/ic_clock"
+        app:layout_constraintTop_toBottomOf="@id/fondo01"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tiempo"
+        style="@style/text"
+        tools:text="Hoy 21:00 - 21:30"
+        app:layout_constraintTop_toBottomOf="@id/fondo01"
+        app:layout_constraintLeft_toRightOf="@id/icon01" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon02"
+        style="@style/icon"
+        android:src="@drawable/ic_location"
+        app:layout_constraintTop_toBottomOf="@id/icon01"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/distancia"
+        style="@style/text"
+        tools:text="1.5km"
+        app:layout_constraintTop_toBottomOf="@id/icon01"
+        app:layout_constraintLeft_toRightOf="@id/icon02" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/precio"
+        style="@style/precio"
+        tools:text="2.99€"
+        app:layout_constraintRight_toRightOf="@id/fondo01"
+        app:layout_constraintBottom_toBottomOf="@id/icon02" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
