@@ -10,6 +10,6 @@
     <dimen name="icon_height">15dp</dimen>
     <dimen name="icon_margin">2.5dp</dimen>
 
-
     <dimen name="title_margin_bottom">5dp</dimen>
+    <dimen name="title_margin_top">5dp</dimen>
 </resources>

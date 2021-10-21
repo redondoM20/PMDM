@@ -9,6 +9,7 @@
         tools:text="Pastelería" />
 
     <RelativeLayout
+        android:id="@+id/card01"
         android:layout_below="@id/title01"
         style="@style/card"
         android:layout_centerInParent="true">
@@ -18,7 +19,7 @@
             style="@style/parte01">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/fondo"
+                android:id="@+id/fondo01"
                 style="@style/image"
                 android:scaleType="fitXY"
                 android:src="@drawable/ic_recipes" />
@@ -70,5 +71,33 @@
         </RelativeLayout>
 
     </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title02"
+        style="@style/title01"
+        tools:text="Pastelería"
+        android:layout_below="@id/card01" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/card"
+        android:layout_below="@id/title02">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/fondo02"
+            style="@style/image"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_recipes"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/title02"
+            android:layout_alignParentBottom="true"
+            tools:text="Strawberry Frosted Layer Cake"
+            constr />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>
