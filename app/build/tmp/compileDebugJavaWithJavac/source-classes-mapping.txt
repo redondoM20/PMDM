@@ -1,2 +1,0 @@
-com/mrredondo/pmdm/BuildConfig.java
- com.mrredondo.pmdm.BuildConfig
