@@ -30,8 +30,20 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
+    <style name="image2">
+        <item name="android:layout_width">@dimen/parte01_width</item>
+        <item name="android:layout_height">@dimen/parte01_height</item>
+    </style>
+
     <style name="title02">
         <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/black_50</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="title02_02">
+        <item name="android:layout_width">@dimen/parte01_width</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/black_50</item>
         <item name="android:textColor">@color/white</item>
