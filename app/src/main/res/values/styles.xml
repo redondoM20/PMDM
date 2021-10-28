@@ -23,6 +23,8 @@
     <style name="parte01">
         <item name="android:layout_width">@dimen/parte01_width</item>
         <item name="android:layout_height">@dimen/parte01_height</item>
+        <item name="android:layout_marginTop">@dimen/card_margin_top</item>
+        <item name="android:scaleType">fitXY</item>
     </style>
 
     <style name="image">

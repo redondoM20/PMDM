@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PMDM</string>
+    <string name="titleCategory">Pastelería</string>
+    <string name="strawberry_frosted_layer_cake">Strawberry Frosted Layer Cake</string>
+    <string name="hoy_21_00_21_30">Hoy 21:00 - 21:30</string>
+    <string name="_1_5km">1.5km</string>
+    <string name="_2_99">2.99€</string>
 </resources>
