@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="header_heigth">50dp</dimen>
+    <dimen name="header_padding">3dp</dimen>
+
+    <dimen name="footer_heigth">50dp</dimen>
+
+    <dimen name="footer_icon_height">30dp</dimen>
+    <dimen name="footer_icon_width">30dp</dimen>
+
+    <dimen name="footer_icon_text_height">20dp</dimen>
+
     <dimen name="space_vertical">16dp</dimen>
     <dimen name="space_horizontal">16dp</dimen>
 
@@ -31,4 +42,9 @@
 
     <dimen name="userBlock_margin_bottom">15dp</dimen>
     <dimen name="userBlock_margin_top">15dp</dimen>
+
+
+    <dimen name="optionMenu_margin_top">10dp</dimen>
+    <dimen name="optionMenu_margin_end">30dp</dimen>
+    <dimen name="optionMenu_textSize">20sp</dimen>
 </resources>

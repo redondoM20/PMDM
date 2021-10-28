@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/cardview_dark_background">
+    style="@style/body">
 
     <LinearLayout
         android:id="@+id/menu"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/black"
-        android:orientation="horizontal"
-        android:padding="3dp">
+        style="@style/header">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon01"
@@ -20,155 +14,112 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/option01"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/white"
-            android:textSize="20sp"
+            style="@style/optionsMenu"
             tools:text="Programas" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/option02"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/white"
-            android:textSize="20sp"
+            style="@style/optionsMenu"
             tools:text="Peliculas" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/option03"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="30dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/white"
-            android:textSize="20sp"
+            style="@style/optionsMenu"
             tools:text="Mi lista" />
 
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text01"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
         android:layout_below="@id/menu"
-        android:layout_marginBottom="15dp"
-        android:textColor="@color/white"
-        android:textSize="35sp"
+        style="@style/UserName"
         tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text01" />
+        style="@style/filmView"
+        android:layout_below="@id/text01"
+        tools:src="@tools:sample/avatars" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/filmView"
         tools:src="@tools:sample/avatars"
         android:layout_below="@id/text01"
         android:layout_toEndOf="@id/image01" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/filmView"
         tools:src="@tools:sample/avatars"
         android:layout_below="@id/text01"
         android:layout_toEndOf="@id/image02" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text02"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:textSize="35sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        tools:text="@tools:sample/first_names"
         android:layout_below="@id/image01"
-        android:textColor="@color/white" />
+        style="@style/UserName"
+        tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image04"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/filmView"
         tools:src="@tools:sample/avatars"
         android:layout_below="@id/text02" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image05"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/filmView"
         tools:src="@tools:sample/avatars"
         android:layout_below="@id/text02"
         android:layout_toEndOf="@id/image01" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image06"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/filmView"
         tools:src="@tools:sample/avatars"
         android:layout_below="@id/text02"
         android:layout_toEndOf="@id/image02" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text03"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:textSize="35sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        tools:text="@tools:sample/first_names"
         android:layout_below="@id/image04"
-        android:textColor="@color/white" />
+        style="@style/UserName"
+        tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image07"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/filmView"
         tools:src="@tools:sample/avatars"
         android:layout_below="@id/text03" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image08"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/filmView"
         tools:src="@tools:sample/avatars"
         android:layout_below="@id/text03"
         android:layout_toEndOf="@id/image01" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/image09"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/filmView"
         tools:src="@tools:sample/avatars"
         android:layout_below="@id/text03"
         android:layout_toEndOf="@id/image02" />
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/black"
-        android:orientation="horizontal">
+        style="@style/footer"
+        android:layout_alignParentBottom="true">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon02"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            style="@style/footerIcon"
             android:layout_alignParentStart="true"
             android:layout_marginStart="25dp"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            style="@style/footerIconText"
             android:layout_below="@id/icon02"
             android:layout_marginStart="25dp"
             android:textColor="@color/white"
@@ -176,15 +127,13 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon03"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            style="@style/footerIcon"
             android:layout_marginStart="50dp"
             android:layout_toEndOf="@id/icon02"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            style="@style/footerIconText"
             android:layout_below="@id/icon03"
             android:layout_marginStart="45dp"
             android:layout_toEndOf="@id/icon02"
@@ -193,15 +142,13 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon04"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            style="@style/footerIcon"
             android:layout_marginStart="60dp"
             android:layout_toEndOf="@id/icon03"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            style="@style/footerIconText"
             android:layout_below="@id/icon02"
             android:layout_marginStart="30dp"
             android:layout_toEndOf="@id/icon03"
@@ -210,15 +157,13 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon05"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            style="@style/footerIcon"
             android:layout_marginStart="60dp"
             android:layout_toEndOf="@id/icon04"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            style="@style/footerIconText"
             android:layout_below="@id/icon02"
             android:layout_marginStart="45dp"
             android:layout_toEndOf="@id/icon04"
@@ -227,15 +172,13 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/icon06"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            style="@style/footerIcon"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="25dp"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            style="@style/footerIconText"
             android:layout_below="@id/icon02"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="25dp"
