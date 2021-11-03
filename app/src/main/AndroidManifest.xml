@@ -10,12 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMDM">
         <activity
+            android:name=".ut2.exerciseAlerts.presentation.AlertsActivity"
+            android:exported="true" />
+        <activity
             android:name=".ut3.UiActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
-
+            android:exported="true" />
         <activity
             android:name=".ut2.UiActivity"
             android:exported="true">
