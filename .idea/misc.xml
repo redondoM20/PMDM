@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/activity_alerts.xml" value="0.2722222222222222" />
+        <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/activity_alerts.xml" value="0.1" />
         <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/activity_mvvm.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/view_elements.xml" value="0.121875" />
         <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/view_netflix2_linearlayout.xml" value="0.25" />
         <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/view_ut3_tgtg_linearlayout.xml" value="0.28425925925925927" />
       </map>

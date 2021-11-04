@@ -1,7 +1,8 @@
 package com.mrredondo.pmdm.ut2.exerciseAlerts.presentation
 
-import com.mrredondo.pmdm.ut2.exerciseAlerts.domain.AlertModel
+import androidx.lifecycle.ViewModel
+import com.mrredondo.pmdm.ut2.exerciseAlerts.domain.GetAlertsUseCase
 
-class AlertsViewModel {
-    fun getFoodModel() = AlertModel()
+class AlertsViewModel(val getAlertsUseCase: GetAlertsUseCase) : ViewModel() {
+    fun getAlertModel() = getAlertsUseCase.execute()
 }
