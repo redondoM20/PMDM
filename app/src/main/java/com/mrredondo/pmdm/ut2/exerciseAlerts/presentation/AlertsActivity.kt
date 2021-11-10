@@ -7,7 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatImageView
 import com.mrredondo.pmdm.R
 import com.mrredondo.pmdm.databinding.ActivityAlertsBinding
+import com.mrredondo.pmdm.ut2.exerciseAlerts.app.MockApiClient
 import com.mrredondo.pmdm.ut2.exerciseAlerts.data.AlertDataRepository
+import com.mrredondo.pmdm.ut2.exerciseAlerts.data.remote.AlertRemoteSource
 import com.mrredondo.pmdm.ut2.exerciseAlerts.domain.GetAlertsUseCase
 
 class AlertsActivity : AppCompatActivity() {
@@ -16,7 +18,7 @@ class AlertsActivity : AppCompatActivity() {
     private lateinit var viewBinding: ActivityAlertsBinding
 
     private val viewModel: AlertsViewModel =
-        AlertsViewModel(GetAlertsUseCase(AlertDataRepository()))
+        AlertsViewModel(GetAlertsUseCase(AlertDataRepository(AlertRemoteSource(MockApiClient()))))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

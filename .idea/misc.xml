@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/activity_alerts.xml" value="0.33" />
         <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/activity_mvvm.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/activity_ut02_ex02.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/view_card_linearlayout.xml" value="0.22685185185185186" />
         <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/view_elements.xml" value="0.121875" />
+        <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/view_item_ut02_ex02.xml" value="0.31892697466467956" />
         <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/view_netflix2_linearlayout.xml" value="0.25" />
         <entry key="..\:/Users/9.244/AndroidStudioProjects/PMDM/app/src/main/res/layout/view_ut3_tgtg_linearlayout.xml" value="0.28425925925925927" />
       </map>
