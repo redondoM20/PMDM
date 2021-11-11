@@ -20,26 +20,26 @@ class MockApiClient : ApiClient {
             ),
             AlertApiModels(
                 "2",
-                "title 01",
+                "title 02",
                 1,
-                "summary 01",
+                "summary 02",
                 "2021-01-01",
-                "body 1",
-                "source 01",
+                "body 2",
+                "source 02",
                 mutableListOf(
-                    FileEntity("name 01", "url 01")
+                    FileEntity("name 02", "url 02")
                 )
             ),
             AlertApiModels(
                 "3",
-                "title 01",
+                "title 03",
                 1,
-                "summary 01",
+                "summary 03",
                 "2021-01-01",
-                "body 1",
-                "source 01",
+                "body 3",
+                "source 03",
                 mutableListOf(
-                    FileEntity("name 01", "url 01")
+                    FileEntity("name 03", "url 03")
                 )
             )
         )

@@ -1,58 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    card_view:cardCornerRadius="8dp">
+    android:layout_height="match_parent"
+    tools:context=".ut2.exerciseAlerts.presentation.AlertsActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <FrameLayout
+        android:id="@+id/wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".ut2.exerciseAlerts.presentation.AlertsActivity">
+        android:layout_height="match_parent" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/iconAlert"
-            android:layout_width="36dp"
-            android:layout_height="match_parent"
-            app:layout_constraintLeft_toLeftOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_alerts"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/view_item_alerts"
+        android:layout_height="match_parent" />
 
-        <LinearLayout
-            android:id="@+id/info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginStart="36dp"
-            app:layout_constraintLeft_toRightOf="@id/iconAlert"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/titleAlert"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintLeft_toRightOf="@id/iconAlert"
-                app:layout_constraintTop_toTopOf="@id/iconAlert" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/dateAlert"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintLeft_toLeftOf="@id/titleAlert"
-                app:layout_constraintTop_toBottomOf="@id/titleAlert" />
-
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/resumeAlert"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintLeft_toLeftOf="@id/titleAlert"
-                app:layout_constraintTop_toBottomOf="@id/dateAlert" />
-        </LinearLayout>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
