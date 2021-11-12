@@ -12,10 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMDM">
         <activity
+            android:name=".ut2.exerciseAlerts.presentation.SecondActivity"
+            android:exported="true" />
+        <activity
             android:name=".ut2.EX02.presentation.Ut02Ex02Activity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ut2.exerciseAlerts.presentation.AlertsActivity"
             android:exported="true">

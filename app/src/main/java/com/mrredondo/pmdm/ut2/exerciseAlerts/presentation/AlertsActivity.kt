@@ -42,7 +42,9 @@ class AlertsActivity : AppCompatActivity() {
     private fun getAlerts() {
         Thread {
             val alerts = viewModel.getAlertModel()
-            alertAdapter.setItems(alerts)
+            runOnUiThread {
+                alertAdapter.setItems(alerts)
+            }
         }.start()
     }
 
