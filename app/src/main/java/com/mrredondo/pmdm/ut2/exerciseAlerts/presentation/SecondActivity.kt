@@ -3,6 +3,7 @@ package com.mrredondo.pmdm.ut2.exerciseAlerts.presentation
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.mrredondo.pmdm.R
 
@@ -21,6 +22,10 @@ class SecondActivity : AppCompatActivity() {
             return intent
         }
     }
+
+    private fun getAlertId(): String =
+        intent.extras!!.getString(KEY_USER_ID, "0")
+
 
 
 }
