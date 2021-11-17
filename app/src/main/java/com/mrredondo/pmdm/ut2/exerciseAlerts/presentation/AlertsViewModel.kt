@@ -10,17 +10,18 @@ class AlertsViewModel(val getAlertsUseCase: GetAlertsUseCase) : ViewModel() {
             AlertViewState(
                 alertModel.id,
                 alertModel.title,
-                alertModel.datePublished,
+                traductDate(alertModel.datePublished),
                 alertModel.summary
             )
         }
     }
 
     fun traductDate(date: String): String {
-        val year = date.substring(0, 3)
-        val month = date.substring(5, 6)
-        val day = date.substring(8, 9)
+        val year = date.substring(0, 4)
+        val month = date.substring(5, 7)
+        val day = date.substring(8, 10)
         val fecha = "$day-$month-$year"
+        return fecha
     }
 
 }
