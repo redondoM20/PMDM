@@ -12,4 +12,9 @@ class AlertDataRepository(private val alertRemote: AlertRemoteSource) : AlertRep
         return remoteModel
     }
 
+    override fun getAlert(id: String): AlertModel {
+        val remoteModel = alertRemote.getAlert(id)
+        return remoteModel
+    }
+
 }

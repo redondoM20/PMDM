@@ -1,7 +1,7 @@
 package com.mrredondo.pmdm.ut2.exerciseAlerts.data.remote
 
 import com.mrredondo.pmdm.ut2.exerciseAlerts.domain.AlertModel
-import com.mrredondo.pmdm.ut2.exerciseAlerts.domain.FileEntity
+import com.mrredondo.pmdm.ut2.exerciseAlerts.domain.FileModel
 
 data class AlertApiModels(
     val alert_id: String,
@@ -11,7 +11,7 @@ data class AlertApiModels(
     val date: String,
     val body: String?,
     val source: String?,
-    val files: List<FileEntity>?
+    val files: List<FileModel>?
 ) {
     fun toDomainModel() = AlertModel(
         alert_id, title, type, summary, date, "", "", mutableListOf()

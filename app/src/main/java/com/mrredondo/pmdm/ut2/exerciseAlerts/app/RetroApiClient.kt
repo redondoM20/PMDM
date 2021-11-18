@@ -46,4 +46,14 @@ class RetroApiClient : ApiClient {
         }
     }
 
+    override fun getAlert(alert_id: String): AlertApiModels? {
+        val call = apiEndPoint.getAlert(alert_id)
+        val response = call.execute()
+        return if (response.isSuccessful) {
+            response.body()?.data
+        } else {
+            null
+        }
+    }
+
 }

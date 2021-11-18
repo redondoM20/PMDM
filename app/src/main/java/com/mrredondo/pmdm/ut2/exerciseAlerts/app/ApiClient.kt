@@ -4,4 +4,5 @@ import com.mrredondo.pmdm.ut2.exerciseAlerts.data.remote.AlertApiModels
 
 interface ApiClient {
     fun getAlerts(): List<AlertApiModels>
+    fun getAlert(alert_id: String): AlertApiModels?
 }

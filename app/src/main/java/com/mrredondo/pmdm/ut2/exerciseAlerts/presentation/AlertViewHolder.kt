@@ -15,7 +15,7 @@ class AlertViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
             view.context.startActivity(
                 SecondActivity.getIntent(
                     view.context,
-                    alertViewState.alertId.toInt()
+                    alertViewState.alertId
                 )
             )
         }

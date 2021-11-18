@@ -1,13 +1,11 @@
 package com.mrredondo.pmdm.ut2.exerciseAlerts.presentation
 
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.mrredondo.pmdm.ut2.exerciseAlerts.app.RetroApiClient
 import com.mrredondo.pmdm.ut2.exerciseAlerts.domain.GetAlertsUseCase
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 
-class AlertsViewModel(val getAlertsUseCase: GetAlertsUseCase) : ViewModel() {
+class AlertsViewModel(
+    val getAlertsUseCase: GetAlertsUseCase
+) : ViewModel() {
     fun getAlertModel(): List<AlertViewState> {
         val alerts = getAlertsUseCase.execute()
         return alerts.map { alertModel ->
@@ -19,6 +17,7 @@ class AlertsViewModel(val getAlertsUseCase: GetAlertsUseCase) : ViewModel() {
             )
         }
     }
+
 
     fun traductDate(date: String): String {
         val year = date.substring(0, 4)
