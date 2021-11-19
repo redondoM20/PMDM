@@ -9,12 +9,12 @@ data class AlertApiModels(
     val type: Int,
     val summary: String,
     val date: String,
-    val body: String?,
+    val body: String,
     val source: String?,
     val files: List<FileModel>?
 ) {
     fun toDomainModel() = AlertModel(
-        alert_id, title, type, summary, date, "", "", mutableListOf()
+        alert_id, title, type, summary, date, body, "", mutableListOf()
     )
 
 }

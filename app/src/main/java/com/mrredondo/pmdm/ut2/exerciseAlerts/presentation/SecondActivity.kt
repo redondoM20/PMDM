@@ -32,7 +32,6 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(bind.root)
-        setupView()
         getAlert()
     }
 
@@ -59,8 +58,15 @@ class SecondActivity : AppCompatActivity() {
         val alertId = getAlertId()
         Log.d(TAG, alertId)
         Thread {
-            val alert = viewModel.getDetailedModel(alertId)
+            var alert = viewModel.getDetailedModel(alertId)
             Log.d(TAG, "$alert")
+            runOnUiThread {
+                if (alert != null) {
+                    bind.alertTitle.text = alert.alertTitle
+                    bind.alertContent.text = alert.alertBody
+                    setupView()
+                }
+            }
         }.start()
 
     }

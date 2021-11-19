@@ -7,14 +7,11 @@ import com.mrredondo.pmdm.ut2.exerciseAlerts.domain.AlertRepository
 class AlertDataRepository(private val alertRemote: AlertRemoteSource) : AlertRepository {
 
 
-    override fun getAlertsAll(): List<AlertModel> {
-        val remoteModel = alertRemote.getAlerts()
-        return remoteModel
+    override fun getAlerts(): List<AlertModel> {
+        return alertRemote.getAlerts()
     }
 
-    override fun getAlert(id: String): AlertModel {
-        val remoteModel = alertRemote.getAlert(id)
-        return remoteModel
-    }
+    override fun getAlert(id: String): AlertModel? =
+        alertRemote.getAlert(id)
 
 }

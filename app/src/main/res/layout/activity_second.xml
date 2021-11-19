@@ -19,7 +19,7 @@
         android:id="@+id/alertTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
+        android:textSize="25sp"
         app:layout_constraintTop_toTopOf="@id/alertTypeImage"
         app:layout_constraintBottom_toBottomOf="@id/alertTypeImage"
         app:layout_constraintLeft_toRightOf="@id/alertTypeImage"
@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:layout_constraintTop_toBottomOf="@id/alertTypeImage"
-        tools:text="Alert files"/>
+        android:text="@string/ficheros_descargables" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/alertLineFiles"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:layout_constraintTop_toBottomOf="@id/alertFiles"
-        tools:text="Alert Content"/>
+        android:text="@string/contenido_del_aviso" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/alertLineContent"

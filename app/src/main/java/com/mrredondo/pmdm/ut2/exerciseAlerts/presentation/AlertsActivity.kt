@@ -1,6 +1,7 @@
 package com.mrredondo.pmdm.ut2.exerciseAlerts.presentation
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mrredondo.pmdm.databinding.ActivityAlertsBinding
@@ -42,6 +43,7 @@ class AlertsActivity : AppCompatActivity() {
     private fun getAlerts() {
         Thread {
             val alerts = viewModel.getAlertModel()
+            Log.i(TAG, "$alerts")
             runOnUiThread {
                 alertAdapter.setItems(alerts)
             }
