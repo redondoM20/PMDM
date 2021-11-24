@@ -49,8 +49,6 @@
         <androidx.constraintlayout.utils.widget.ImageFilterView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_android"
-            app:altSrc="@drawable/ic_image_lion"
             app:crossfade="0.5" />
 
         <!-- Button: muestra un botón de acción -->
@@ -62,14 +60,11 @@
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_android" />
+            android:layout_height="wrap_content" />
 
         <androidx.constraintlayout.utils.widget.ImageFilterButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_android"
-            app:altSrc="@drawable/ic_image_lion"
             app:crossfade="0.5" />
 
         <!-- RadioButtons: Botones de selección -->
