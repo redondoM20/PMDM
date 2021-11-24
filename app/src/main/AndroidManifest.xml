@@ -10,12 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PMDM">
         <activity
+            android:name=".ut2.ex06.presentation.Ut02Ex06Activity"
+            android:exported="true" />
+        <activity
             android:name=".ut3.UiActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
-
+            android:exported="true" />
         <activity
             android:name=".ut2.UiActivity"
             android:exported="true">
