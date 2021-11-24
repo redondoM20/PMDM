@@ -5,6 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.HtmlCompat
+import androidx.core.text.HtmlCompat.FROM_HTML_MODE_LEGACY
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mrredondo.pmdm.databinding.ActivitySecondBinding
 import com.mrredondo.pmdm.ut2.exerciseAlerts.app.RetroApiClient
@@ -63,7 +65,8 @@ class SecondActivity : AppCompatActivity() {
             runOnUiThread {
                 if (alert != null) {
                     bind.alertTitle.text = alert.alertTitle
-                    bind.alertContent.text = alert.alertBody
+                    bind.alertContent.text =
+                        HtmlCompat.fromHtml(alert.alertBody, FROM_HTML_MODE_LEGACY)
                     setupView()
                 }
             }
