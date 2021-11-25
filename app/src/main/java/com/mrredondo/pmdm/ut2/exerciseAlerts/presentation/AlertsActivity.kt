@@ -3,6 +3,7 @@ package com.mrredondo.pmdm.ut2.exerciseAlerts.presentation
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mrredondo.pmdm.databinding.ActivityAlertsBinding
 import com.mrredondo.pmdm.ut2.exerciseAlerts.app.RetroApiClient
@@ -26,7 +27,9 @@ class AlertsActivity : AppCompatActivity() {
         setContentView(bind.root)
         setupView()
         //exerciseRecycledView()
-        getAlerts()
+        //getAlerts()
+        loadAlerts()
+        setupViewStateObserver()
     }
 
     private fun setupView() {
@@ -35,7 +38,24 @@ class AlertsActivity : AppCompatActivity() {
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }
 
-    private fun exerciseRecycledView() {
+    private fun setupViewStateObserver() {
+        val alertsObserver = Observer<List<AlertViewState>> { alertsViewState ->
+            renderUI(alertsViewState)
+        }
+        viewModel.alertsViewState.observe(this, alertsObserver)
+    }
+
+    private fun renderUI(alertsViewState: List<AlertViewState>) {
+        alertsViewState.forEach {
+            Log.d("RenderUI: ", "$it")
+        }
+    }
+
+    private fun loadAlerts() {
+        viewModel.loadAlertsWithCoroutines()
+    }
+
+    /*private fun exerciseRecycledView() {
         val alerts = viewModel.getAlertModel()
         alertAdapter.setItems(alerts)
     }
@@ -48,6 +68,6 @@ class AlertsActivity : AppCompatActivity() {
                 alertAdapter.setItems(alerts)
             }
         }.start()
-    }
+    }*/
 
 }
