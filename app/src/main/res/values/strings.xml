@@ -3,4 +3,13 @@
     <string name="table_col1">columna 1</string>
     <string name="table_col2">columna 2</string>
     <string name="table_col3">columna 3</string>
+    <string name="app_button">Change</string>
+    <string name="title_form">Form</string>
+    <string name="title_list">List</string>
+    <string name="user_name">Nombre</string>
+    <string name="introducir_nombre">Introducir nombre</string>
+    <string name="user_surname">Apellidos</string>
+    <string name="user_ccaa">Comunidad Autónoma</string>
+    <string name="introducir_apellidos">Introducir apellidos</string>
+    <string name="user_sexo">Sexo</string>
 </resources>
