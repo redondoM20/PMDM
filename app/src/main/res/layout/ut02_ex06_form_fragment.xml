@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/introducir_nombre"
+            android:layout_marginBottom="10dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_surname" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/introducir_apellidos"
+            android:layout_marginBottom="10dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_ccaa" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/ccaa_array"
+            android:layout_marginBottom="10dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_sexo" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_mujer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mujer" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/radio_hombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hombre" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/demarcaci_n" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/portero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/portero" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/defensa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/defensa" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/mediocentro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mediocentro" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/delantero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delantero" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:background="@color/secondaryLightColor"
+            android:textColor="@color/secondaryTextColor"
+            android:text="@string/guardar" />
+
+
+    </LinearLayout>
+
+</ScrollView>

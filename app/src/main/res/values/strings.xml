@@ -12,4 +12,12 @@
     <string name="user_ccaa">Comunidad Autónoma</string>
     <string name="introducir_apellidos">Introducir apellidos</string>
     <string name="user_sexo">Sexo</string>
+    <string name="portero">Portero</string>
+    <string name="defensa">Defensa</string>
+    <string name="mediocentro">Mediocentro</string>
+    <string name="delantero">Delantero</string>
+    <string name="demarcaci_n">Demarcación</string>
+    <string name="guardar">Guardar</string>
+    <string name="mujer">Mujer</string>
+    <string name="hombre">Hombre</string>
 </resources>

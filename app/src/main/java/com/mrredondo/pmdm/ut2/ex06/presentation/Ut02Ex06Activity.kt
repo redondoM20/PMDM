@@ -1,11 +1,9 @@
 package com.mrredondo.pmdm.ut2.ex06.presentation
 
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.mrredondo.pmdm.R
@@ -29,16 +27,12 @@ class Ut02Ex06Activity : AppCompatActivity() {
 
     private fun setupViewBinding() {
         setContentView(bind.root)
-        replaceFragment(bind.containerFragment.id, Ut02Ex06FormFragment.createInstance())
+        replaceFragment(bind.containerFragment.id, Ut02Ex06FormFragment.newInstance())
     }
 
     private fun setupCustomToolbar() {
-        bind.mainBar.visibility = View.GONE
-        bind.viewCustomToolbar.customToolbar.visibility = View.VISIBLE
-
-        bind.viewCustomToolbar.title.text = getString(R.string.title_form)
-        bind.viewCustomToolbar.customToolbar.inflateMenu(R.menu.menu_ut02_ex06)
-
+        setSupportActionBar(bind.mainBar)
+        supportActionBar?.title = getString(R.string.title_form)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -50,16 +44,15 @@ class Ut02Ex06Activity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_change -> {
-                Log.d("@dev", "SI")
-                true
 
-                /*if (bind.viewCustomToolbar.title.text == getString(R.string.title_form)){
-                    bind.viewCustomToolbar.title.text = getString(R.string.title_list)
-                    replaceFragment(bind.containerFragment.id, Ut02Ex06FormFragment.createInstance())
-                }else{
-                    bind.viewCustomToolbar.title.text = getString(R.string.title_form)
+                if (supportActionBar?.title == getString(R.string.title_form)) {
+                    replaceFragment(bind.containerFragment.id, Ut02Ex06ListFragment.newInstance())
+                    supportActionBar?.title = getString(R.string.title_list)
+                } else {
+                    replaceFragment(bind.containerFragment.id, Ut02Ex06FormFragment.newInstance())
+                    supportActionBar?.title = getString(R.string.title_form)
                 }
-                true*/
+                true
             }
             else -> super.onOptionsItemSelected(item)
         }
