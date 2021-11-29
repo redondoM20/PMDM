@@ -18,6 +18,7 @@ class Ut02Ex06Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupView()
+        loadDefaultFragment()
     }
 
     private fun setupView() {
@@ -27,6 +28,9 @@ class Ut02Ex06Activity : AppCompatActivity() {
 
     private fun setupViewBinding() {
         setContentView(bind.root)
+    }
+
+    private fun loadDefaultFragment() {
         replaceFragment(bind.containerFragment.id, Ut02Ex06FormFragment.newInstance())
     }
 
@@ -61,7 +65,7 @@ class Ut02Ex06Activity : AppCompatActivity() {
 
     private fun replaceFragment(layoutId: Int, fragment: Fragment) {
         val fragmentTransition = supportFragmentManager.beginTransaction()
-        fragmentTransition.replace(layoutId, fragment)
+        fragmentTransition.replace(layoutId, fragment, "")
         fragmentTransition.addToBackStack(null)
         fragmentTransition.commit()
     }
