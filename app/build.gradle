@@ -8,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.jmperezra.aad_playground"
+        applicationId "com.mrredondo.aad_playground"
         minSdk 23
         targetSdk 31
         versionCode 1

@@ -39,6 +39,7 @@
             android:text="@string/user_ccaa" />
 
         <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/inputCcaa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:entries="@array/ccaa_array"
@@ -50,6 +51,7 @@
             android:text="@string/user_sexo" />
 
         <RadioGroup
+            android:id="@+id/inputGender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -59,7 +61,8 @@
                 android:id="@+id/radio_mujer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/mujer" />
+                android:text="@string/mujer"
+                android:checked="true" />
 
             <androidx.appcompat.widget.AppCompatRadioButton
                 android:id="@+id/radio_hombre"
@@ -74,6 +77,7 @@
             android:text="@string/demarcaci_n" />
 
         <LinearLayout
+            android:id="@+id/inputPosition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"

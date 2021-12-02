@@ -20,4 +20,8 @@
     <string name="guardar">Guardar</string>
     <string name="mujer">Mujer</string>
     <string name="hombre">Hombre</string>
+    <string name="nombre_y_apellidos">Nombre y Apellidos</string>
+    <string name="ccaa">CCAA</string>
+    <string name="gender">Gender</string>
+    <string name="posiciones">Posiciones</string>
 </resources>
