@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="header_heigth">50dp</dimen>
+    <dimen name="header_padding">3dp</dimen>
+
+    <dimen name="footer_heigth">50dp</dimen>
+
+    <dimen name="footer_icon_height">30dp</dimen>
+    <dimen name="footer_icon_width">30dp</dimen>
+
+    <dimen name="footer_icon_text_height">20dp</dimen>
+
+    <dimen name="space_vertical">16dp</dimen>
+    <dimen name="space_horizontal">16dp</dimen>
+
+    <dimen name="avatarView_height">70dp</dimen>
+    <dimen name="avatarView_width">100dp</dimen>
+
+    <dimen name="line_margin_top">2dp</dimen>
+    <dimen name="line_margin_start">5dp</dimen>
+    <dimen name="line_margin_end">5dp</dimen>
+    <dimen name="line_height">20dp</dimen>
+    <dimen name="line_width">1.5dp</dimen>
+    <!-- Fuentes -->
+    <dimen name="title_size1">24sp</dimen>
+    <dimen name="title_size2">24sp</dimen>
+
+    <dimen name="block_margin_bottom">15dp</dimen>
+
+    <dimen name="name_height">40dp</dimen>
+    <dimen name="name_margin_start">5dp</dimen>
+    <dimen name="name_textSize">35sp</dimen>
+
+    <dimen name="avatar_height">40dp</dimen>
+    <dimen name="avatar_width">40dp</dimen>
+    <dimen name="avatar_margin_bottom">15dp</dimen>
+
+    <dimen name="icon_height">24dp</dimen>
+    <dimen name="icon_width">24dp</dimen>
+    <dimen name="icon_margin">12dp</dimen>
+
+    <dimen name="userBlock_margin_bottom">15dp</dimen>
+    <dimen name="userBlock_margin_top">15dp</dimen>
+
+
+    <dimen name="optionMenu_margin_top">10dp</dimen>
+    <dimen name="optionMenu_margin_end">30dp</dimen>
+    <dimen name="optionMenu_textSize">20sp</dimen>
+</resources>

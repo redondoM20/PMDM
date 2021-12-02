@@ -1,231 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/cardview_dark_background">
+    style="@style/Body">
 
     <LinearLayout
         android:id="@+id/menu"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="@color/black">
+        style="@style/Header">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/icon01"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
-            tools:src="@tools:sample/avatars"
-            android:layout_below="@id/text01" />
+            android:id="@+id/icon_netflix"
+            style="@style/icon"
+            tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/option01"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="10dp"
-            android:textSize="20dp"
-            android:text="Programas"
-            android:textColor="@color/white" />
+            android:id="@+id/label_option_programas"
+            style="@style/OptionsMenu"
+            tools:text="Programas" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/option02"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
-            android:textSize="20dp"
-            android:text="Peliculas"
-            android:textColor="@color/white" />
+            android:id="@+id/label_option_peliculas"
+            style="@style/OptionsMenu"
+            tools:text="Peliculas" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/option03"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
-            android:textSize="20dp"
-            android:text="Mi lista"
-            android:textColor="@color/white" />
+            android:id="@+id/label_option_mi_lista"
+            style="@style/OptionsMenu"
+            tools:text="Mi lista" />
 
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text01"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:textSize="35dp"
-        android:layout_marginBottom="15dp"
-        tools:text="@tools:sample/first_names"
+        android:id="@+id/label_populares_en_netflix"
         android:layout_below="@id/menu"
-        android:textColor="@color/white" />
+        style="@style/UserName"
+        tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text01" />
+        android:id="@+id/primera_imagen_populares"
+        style="@style/FilmView"
+        android:layout_below="@id/label_populares_en_netflix"
+        tools:src="@tools:sample/avatars" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image02"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/segunda_imagen_populares"
+        style="@style/FilmView"
         tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text01"
-        android:layout_toRightOf="@id/image01" />
+        android:layout_below="@id/label_populares_en_netflix"
+        android:layout_toEndOf="@id/primera_imagen_populares" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image03"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tercera_imagen_populares"
+        style="@style/FilmView"
         tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text01"
-        android:layout_toRightOf="@id/image02" />
+        android:layout_below="@id/label_populares_en_netflix"
+        android:layout_toEndOf="@id/segunda_imagen_populares" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text02"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:textSize="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        tools:text="@tools:sample/first_names"
-        android:layout_below="@id/image01"
-        android:textColor="@color/white" />
+        android:id="@+id/label_tendencias"
+        android:layout_below="@id/primera_imagen_populares"
+        style="@style/UserName"
+        tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image04"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/primera_imagen_tendencias"
+        style="@style/FilmView"
         tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text02" />
+        android:layout_below="@id/label_tendencias" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image05"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/segunda_imagen_tendencias"
+        style="@style/FilmView"
         tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text02"
-        android:layout_toRightOf="@id/image01" />
+        android:layout_below="@id/label_tendencias"
+        android:layout_toEndOf="@id/primera_imagen_tendencias" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image06"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tercera_imagen_tendencias"
+        style="@style/FilmView"
         tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text02"
-        android:layout_toRightOf="@id/image02" />
+        android:layout_below="@id/label_tendencias"
+        android:layout_toEndOf="@id/segunda_imagen_tendencias" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text03"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:textSize="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="15dp"
-        tools:text="@tools:sample/first_names"
-        android:layout_below="@id/image04"
-        android:textColor="@color/white" />
+        android:id="@+id/label_verlo_nuevamente"
+        android:layout_below="@id/primera_imagen_tendencias"
+        style="@style/UserName"
+        tools:text="@tools:sample/first_names" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image07"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/priemra_imagen_verlo_nuevamente"
+        style="@style/FilmView"
         tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text03" />
+        android:layout_below="@id/label_verlo_nuevamente" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image08"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/segunda_imagen_verlo_nuevamente"
+        style="@style/FilmView"
         tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text03"
-        android:layout_toRightOf="@id/image01" />
+        android:layout_below="@id/label_verlo_nuevamente"
+        android:layout_toEndOf="@id/priemra_imagen_verlo_nuevamente" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/image09"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tercera_imagen_verlo_nuevamente"
+        style="@style/FilmView"
         tools:src="@tools:sample/avatars"
-        android:layout_below="@id/text03"
-        android:layout_toRightOf="@id/image02" />
+        android:layout_below="@id/label_verlo_nuevamente"
+        android:layout_toEndOf="@id/segunda_imagen_verlo_nuevamente" />
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/black"
-        android:orientation="horizontal">
+        style="@style/Footer"
+        android:layout_alignParentBottom="true">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/icon02"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            tools:src="@tools:sample/avatars"
-            android:layout_alignParentStart="true" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text="Inicio"
-            android:layout_below="@id/icon02"
-            android:textColor="@color/white" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/icon03"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_toRightOf="@id/icon02"
+            android:id="@+id/icon_inicio"
+            style="@style/FooterIcon"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text="Buscar"
-            android:layout_below="@id/icon02"
-            android:textColor="@color/white" />
+            style="@style/FooterIconText"
+            android:layout_below="@id/icon_inicio"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/white"
+            tools:text="Inicio" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/icon04"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_toRightOf="@id/icon03"
+            android:id="@+id/icon_buscar"
+            style="@style/FooterIcon"
+            android:layout_marginStart="50dp"
+            android:layout_toEndOf="@id/icon_inicio"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text="Proximamente"
-            android:layout_below="@id/icon02"
+            style="@style/FooterIconText"
+            android:layout_below="@id/icon_buscar"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@id/icon_inicio"
+            tools:text="Buscar"
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/icon05"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_toRightOf="@id/icon04"
+            android:id="@+id/icon_proximamente"
+            style="@style/FooterIcon"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@id/icon_buscar"
             tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text="Descargas"
-            android:layout_below="@id/icon02"
+            style="@style/FooterIconText"
+            android:layout_below="@id/icon_proximamente"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/icon_buscar"
+            tools:text="Proximamente"
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/icon06"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            tools:src="@tools:sample/avatars"
-            android:layout_alignParentEnd="true" />
+            android:id="@+id/icon_descargas"
+            style="@style/FooterIcon"
+            android:layout_marginStart="60dp"
+            android:layout_toEndOf="@id/icon_proximamente"
+            tools:src="@tools:sample/avatars" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text="Mas"
-            android:layout_below="@id/icon02"
+            style="@style/FooterIconText"
+            android:layout_below="@id/icon_descargas"
+            android:layout_marginStart="45dp"
+            android:layout_toEndOf="@id/icon_proximamente"
+            tools:text="Descargas"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon_mas"
+            style="@style/FooterIcon"
             android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/FooterIconText"
+            android:layout_below="@id/icon_descargas"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            tools:text="Mas"
             android:textColor="@color/white" />
 
     </RelativeLayout>
