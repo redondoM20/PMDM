@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment
 import com.google.gson.Gson
 import com.mrredondo.pmdm.commons.serializer.GsonSerializer
 import com.mrredondo.pmdm.databinding.Ut02Ex06FormFragmentBinding
+import com.mrredondo.pmdm.ut2.ex06.data.PlayerDataRepository
 import com.mrredondo.pmdm.ut2.ex06.data.PlayerFileLocalSource
-import com.mrredondo.pmdm.ut2.ex06.domain.PlayerDataRepository
 import com.mrredondo.pmdm.ut2.ex06.domain.PlayerModel
 import com.mrredondo.pmdm.ut2.ex06.domain.SavePlayerUseCase
 
@@ -21,7 +21,7 @@ class Ut02Ex06FormFragment : Fragment() {
             SavePlayerUseCase(
                 PlayerDataRepository(
                     PlayerFileLocalSource(
-                        Ut02Ex06Activity(), GsonSerializer(Gson())
+                        requireActivity(), GsonSerializer(Gson())
                     )
                 )
             )
@@ -70,6 +70,19 @@ class Ut02Ex06FormFragment : Fragment() {
             positions += delantero.text.toString()
         }
         viewModel.savePlayer(PlayerModel("$name", "$surname", "$ccaa", "$gender", positions))
+        clearFragment()
+    }
+
+    private fun clearFragment() {
+        bind.inputName.setText(" ")
+        bind.inputSurname.setText(" ")
+        bind.inputCcaa.setSelection(0)
+        bind.radioMujer.isChecked = true
+        bind.radioHombre.isChecked = false
+        bind.portero.isChecked = false
+        bind.defensa.isChecked = false
+        bind.mediocentro.isChecked = false
+        bind.delantero.isChecked = false
     }
 
     companion object {

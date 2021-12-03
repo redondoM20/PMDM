@@ -1,11 +1,10 @@
-package com.mrredondo.pmdm.ut2.ex06.domain
+package com.mrredondo.pmdm.ut2.ex06.data
 
-import com.mrredondo.pmdm.ut2.ex06.data.PlayerFileLocalSource
+import com.mrredondo.pmdm.ut2.ex06.domain.PlayerModel
 
 class PlayerDataRepository(private val playerFileLocalSource: PlayerFileLocalSource) {
     fun fetchAll(): List<PlayerModel> {
-        var players = playerFileLocalSource.fetch()
-        return players
+        return playerFileLocalSource.fetch()
     }
 
     fun save(playerModel: PlayerModel) {

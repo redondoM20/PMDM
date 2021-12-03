@@ -1,18 +1,17 @@
 package com.mrredondo.pmdm.ut2.ex06.presentation
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.mrredondo.pmdm.commons.serializer.GsonSerializer
 import com.mrredondo.pmdm.databinding.Ut02Ex06ListFragmentBinding
+import com.mrredondo.pmdm.ut2.ex06.data.PlayerDataRepository
 import com.mrredondo.pmdm.ut2.ex06.data.PlayerFileLocalSource
 import com.mrredondo.pmdm.ut2.ex06.domain.GetPlayersUseCase
-import com.mrredondo.pmdm.ut2.ex06.domain.PlayerDataRepository
 
 class Ut02Ex06ListFragment : Fragment() {
 
@@ -21,12 +20,14 @@ class Ut02Ex06ListFragment : Fragment() {
             GetPlayersUseCase(
                 PlayerDataRepository(
                     PlayerFileLocalSource(
-                        Ut02Ex06Activity(), GsonSerializer(Gson())
+                        requireActivity(), GsonSerializer(Gson())
                     )
                 )
             )
         )
     }
+
+    private val playerAdapter = PlayerAdapter()
 
     private lateinit var bind: Ut02Ex06ListFragmentBinding
 
@@ -35,26 +36,14 @@ class Ut02Ex06ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         bind = Ut02Ex06ListFragmentBinding.inflate(inflater, container, false)
-        setupObservables()
-        loadPlayers()
+        setupView()
         return bind.root
     }
 
-    private fun setupObservables() {
-        val playerObserver = Observer<PlayerViewState> { playerViewState ->
-            renderPlayers(playerViewState)
-        }
-        viewModel.playerObservable.observe(this, playerObserver)
-    }
-
-    private fun renderPlayers(playerViewState: PlayerViewState) {
-        playerViewState.data.forEach { playerModel ->
-            Log.d(TAG, "$playerModel")
-        }
-    }
-
-    private fun loadPlayers() {
-        viewModel.getPlayers()
+    private fun setupView() {
+        bind.listPlayers.adapter = playerAdapter
+        bind.listPlayers.layoutManager =
+            LinearLayoutManager(requireActivity(), LinearLayoutManager.VERTICAL, false)
     }
 
     companion object {
