@@ -37,6 +37,7 @@ class Ut02Ex06ListFragment : Fragment() {
     ): View {
         bind = Ut02Ex06ListFragmentBinding.inflate(inflater, container, false)
         setupView()
+        playersRecyclerView()
         return bind.root
     }
 
@@ -44,6 +45,11 @@ class Ut02Ex06ListFragment : Fragment() {
         bind.listPlayers.adapter = playerAdapter
         bind.listPlayers.layoutManager =
             LinearLayoutManager(requireActivity(), LinearLayoutManager.VERTICAL, false)
+    }
+
+    private fun playersRecyclerView() {
+        val players = viewModel.getPlayers()
+        playerAdapter.setItems(players)
     }
 
     companion object {

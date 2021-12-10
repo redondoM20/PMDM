@@ -4,16 +4,17 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mrredondo.pmdm.R
+import com.mrredondo.pmdm.ut2.ex06.domain.PlayerModel
 
 class PlayerAdapter : RecyclerView.Adapter<PlayerViewHolder>() {
-    private val dataSet = mutableListOf<PlayerViewState>()
+    private val dataSet = mutableListOf<PlayerModel>()
 
-    fun setItems(items: List<PlayerViewState>) {
+    fun setItems(items: PlayersViewState) {
         dataSet.clear()
-        addItems(items.toMutableList())
+        addItems(items.data)
     }
 
-    fun addItems(items: MutableList<PlayerViewState>) {
+    fun addItems(items: List<PlayerModel>) {
         dataSet.addAll(items)
         notifyDataSetChanged()
     }
